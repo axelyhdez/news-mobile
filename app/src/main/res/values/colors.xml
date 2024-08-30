@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="Rich_Black">#0D1321</color>
+    <color name="Prussian_Blue">#1D2D44</color>
+    <color name="Paynes_Gray">#3E5C76</color>
+    <color name="Silver_Lake_Blue">#748CAB</color>
+    <color name="Eggshell">#F0EBD8</color>
+
 </resources>
