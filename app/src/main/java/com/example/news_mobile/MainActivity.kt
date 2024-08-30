@@ -1,6 +1,8 @@
 package com.example.news_mobile
 
+import android.graphics.Color
 import android.os.Bundle
+import android.provider.CalendarContract.Colors
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -21,5 +23,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
     }
 }

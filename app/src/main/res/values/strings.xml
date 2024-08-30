@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">news-mobile</string>
+    <string name="app_name">Noticias del mundo</string>
+    <string name="title">Noticias del mundo</string>
+
 </resources>

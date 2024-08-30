@@ -1,7 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Newsmobile" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.Newsmobile" parent="Theme.Material3.Dark.NoActionBar">
+        <!--Fuente-->
+        <item name="android:fontFamily">@font/suse_medium</item>
+
+        <!--Colores-->
+        <item name="android:colorBackground">@color/Rich_Black</item>
+        <item name="android:tint">@color/Eggshell</item>
+        <item name="android:textColor">@color/Silver_Lake_Blue</item>
     </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/Rich_Black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.Newsmobile</item>
+    </style>
+
+    <style name="Theme.Newsmobile" parent="Base.Theme.Newsmobile" />
+
 </resources>
