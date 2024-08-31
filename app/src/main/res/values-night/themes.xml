@@ -6,7 +6,7 @@
 
         <!--Colores-->
         <item name="android:colorBackground">@color/Rich_Black</item>
-        <item name="android:textColor">@color/Silver_Lake_Blue</item>
+        <item name="android:textColor">@color/Paynes_Gray</item>
     </style>
 
     <!--Tema de SplashScreen-->
