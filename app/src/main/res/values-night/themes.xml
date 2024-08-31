@@ -6,10 +6,10 @@
 
         <!--Colores-->
         <item name="android:colorBackground">@color/Rich_Black</item>
-        <item name="android:tint">@color/Eggshell</item>
         <item name="android:textColor">@color/Silver_Lake_Blue</item>
     </style>
 
+    <!--Tema de SplashScreen-->
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/Rich_Black</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>

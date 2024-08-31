@@ -6,16 +6,17 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.news_mobile.Model.Articles
 import com.example.news_mobile.Model.NewsModel
 import com.example.news_mobile.R
 import com.squareup.picasso.Picasso
 
 
-class NewsAdapter (val News:List<NewsModel>): RecyclerView.Adapter<NewsAdapter.NewsHolder>() {
+class NewsAdapter (val News:List<Articles>): RecyclerView.Adapter<NewsAdapter.NewsHolder>() {
 
     //Holder
     class NewsHolder(val view: View):RecyclerView.ViewHolder(view){
-        fun render(News:NewsModel){
+        fun render(News:Articles){
             view.findViewById<TextView>(R.id.TituloNews).text=News.title
             view.findViewById<TextView>(R.id.DescripcionNews).text=News.description
             Picasso.get().load(News.urlToImage).into(view.findViewById<ImageView>(R.id.ImageNew))
