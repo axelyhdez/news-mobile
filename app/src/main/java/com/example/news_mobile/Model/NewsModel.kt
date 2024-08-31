@@ -1,0 +1,8 @@
+package com.example.news_mobile.Model
+
+data class NewsModel(
+    val title: String,
+    val description: String,
+    val urlToImage: String
+)
+
