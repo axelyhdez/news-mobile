@@ -6,9 +6,8 @@
 
         <!--Colores-->
         <item name="android:colorBackground">@color/Eggshell</item>
-        <item name="android:tint">@color/Rich_Black</item>
+        <!--<item name="android:tint">@color/Rich_Black</item>-->
         <item name="android:textColor">@color/Prussian_Blue</item>
-
 
     </style>
 

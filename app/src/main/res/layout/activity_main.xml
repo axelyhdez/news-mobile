@@ -24,6 +24,7 @@
             android:minHeight="50.dp"
             android:contentDescription="@string/app_name"
             android:layout_marginHorizontal="15.dp"
+            android:tint="@color/Rich_Black"
             />
         <TextView
             android:layout_width="match_parent"
@@ -32,5 +33,11 @@
             android:textSize="30.sp"
             />
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </LinearLayout>
