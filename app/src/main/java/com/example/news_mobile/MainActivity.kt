@@ -1,8 +1,6 @@
 package com.example.news_mobile
 
-import android.graphics.Color
 import android.os.Bundle
-import android.provider.CalendarContract.Colors
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -19,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         NewsModel("Paralympics 2024: What you need to know about classification","How each of the 22 sports are classified at the Paris Paralympics.","https://ichef.bbci.co.uk/news/1024/branded_sport/a96e/live/9f2f4930-6093-11ef-8c32-f3c2bc7494c6.jpg"),
         NewsModel("Are these sports in the Olympics, Paralympics or both?","Test your knowledge on how well you know the sports featured in the Paralympics and Olympics.","https://ichef.bbci.co.uk/news/1024/branded_sport/6ac9/live/117d9b70-61a4-11ef-8c32-f3c2bc7494c6.jpg"),
         NewsModel("King appoints composer as Master of his music","She is best known for her work on the 2012 Paralympics, the Proms and the COP26 summit.","https://ichef.bbci.co.uk/news/1024/branded_news/eeb0/live/bdf0a860-6286-11ef-8c32-f3c2bc7494c6.jpg")
-
     )
 
 

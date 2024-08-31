@@ -24,7 +24,7 @@
             android:minHeight="50.dp"
             android:contentDescription="@string/app_name"
             android:layout_marginHorizontal="15.dp"
-            android:tint="@color/Rich_Black"
+            app:tint="@color/Rich_Black"
             />
         <TextView
             android:layout_width="match_parent"
