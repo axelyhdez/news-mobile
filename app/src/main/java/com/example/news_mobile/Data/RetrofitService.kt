@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 interface RetrofitMethods {
-    @GET("everything?q=paralympics&pageSize=10&sortBy=popularity&apiKey=1801b7076c154fdcafa05f0fe932ea07")
+    @GET("everything?q=paralympics&sortBy=popularity&apiKey=1801b7076c154fdcafa05f0fe932ea07")
     suspend fun getNews():NewsModel
 }
 

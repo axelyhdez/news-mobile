@@ -31,10 +31,6 @@ class MainActivity : AppCompatActivity() {
             "https://ichef.bbci.co.uk/news/1024/branded_news/eeb0/live/bdf0a860-6286-11ef-8c32-f3c2bc7494c6.jpg")
     )
 
-    lateinit var TextView1:TextView
-    lateinit var TextView2:TextView
-    lateinit var TextView3:TextView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
@@ -49,23 +45,23 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        
+
         val service = RetrofitServiceFactory.getNewsRetro()
 
         lifecycleScope.launch {
             val newsApi = service.getNews()
-            println(newsApi)
+            val datos=newsApi.articles
+            if (datos != null) {
+                initRecycler(datos)
+            }
         }
-
-
-        initRecycler()
     }
 
-    fun initRecycler(){
+    fun initRecycler(datos: List<Articles>){
         lateinit var RecyclerNews : RecyclerView
         RecyclerNews=findViewById(R.id.recyclerNews)
         RecyclerNews.layoutManager = LinearLayoutManager(this)
-        val adapter = NewsAdapter(news)
+        val adapter = NewsAdapter(datos)
         RecyclerNews.adapter=adapter
     }
 
